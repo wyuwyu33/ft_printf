@@ -6,7 +6,7 @@
 #    By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/08 14:16:14 by wyu               #+#    #+#              #
-#    Updated: 2022/02/13 08:58:00 by wyu              ###   ########.fr        #
+#    Updated: 2022/02/19 01:44:05 by wyu              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,7 @@ SET_OBJS 	= $(addsuffix .o, $(SET))
 UTILL_OBJS 	= $(addsuffix .o, $(UTILL))
 OBJS 		= $(INFO_OBJS) $(PRINT_OBJS) $(SET_OBJS) $(UTILL_OBJS) ft_printf.o
 
-.PHONY : all clean fclean re
+.PHONY : all clean fclean re bonus
 
 all : $(NAME)
 
@@ -65,5 +65,7 @@ clean :
 fclean : clean
 		$(RM) $(NAME)
 		make fclean -C $(LIBFT)
+
+bonus : all
 
 re : clean all

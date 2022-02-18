@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:04:40 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/18 22:57:57 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 01:42:35 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	print_hexlen(t_info info, unsigned int unum)
 		unum /= base;
 		count++;
 	}
-	if (info.hash == VALID)
+	if (info.hash == VALID && unum)
 		return (count + 2);
 	return (count);
 }
@@ -60,7 +60,8 @@ int	print_hex(t_info info, unsigned int hex_num)
 	width_redefine(&info, len);
 	count += print_space_prefix(&info);
 	count += print_sign(info, '\0');
-	count += print_notation(info);
+	if (hex_num)
+		count += print_notation(info);
 	count += print_zero(&info);
 	count += print_precision(&info);
 	count += print_puthex(info.specifier, hex_num);

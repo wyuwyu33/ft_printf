@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:55:59 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/18 22:59:26 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:13:45 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 int main(void)
 {
 	printf("----printf--\n");
-	printf("\n%d\n", printf("%-50.20X", -42));
+	printf("\n%d\n", printf("% s", ""));
 	printf("----ft_printf--\n");
-	printf("\n%d", ft_printf("%-50.20X", -42));
+	printf("\n%d", ft_printf("% s", ""));
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 12:55:11 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/13 12:18:43 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 01:55:54 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ typedef struct	s_info
 	int			plus;
 	int			width;
 	int			precision;
+	int			precision_activate;
 	int			error;
 	char		specifier;
 }				t_info;

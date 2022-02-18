@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 05:23:19 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/12 17:58:50 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:05:29 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	filter_specifier(t_info *info)
 		info->error = VALID;
 	if (!ft_strchr("xX", info->specifier) && info->hash)
 		info->error = VALID;
-	if (!ft_strchr("diuxX", info->specifier) && info->precision != 0)
+	if (!ft_strchr("sdiuxX", info->specifier) && info->precision != 0)
 		info->error = VALID;
 	if (!ft_strchr("diuxX%", info->specifier) && info->zero)
 		info->error = VALID;

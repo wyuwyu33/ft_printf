@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:23:23 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/13 12:17:32 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:06:10 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,7 @@ void	precision_asterisk(t_info *info, int asterisk)
 		return ;
 	}
 	if (asterisk < 0)
-	{
-		info->dash = VALID;
-		asterisk *= -1;
-	}
+		asterisk = 0;
 	info->precision = asterisk;
 }
 
@@ -33,6 +30,7 @@ void	set_precision(char **format,t_info *info, va_list *ap)
 	
 	if (**format != '.')
 		return ;
+	info->precision_activate = VALID;
 	(*format)++;
 	if (info->zero == VALID)
 		info->zero = -1;

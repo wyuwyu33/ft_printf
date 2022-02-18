@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 00:23:06 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/17 19:16:07 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/18 23:17:02 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int		parse_and_print(char *format, va_list ap)
 			format++;
 			info = set_info(&format, &ap);
 			printed = print_info(info, &ap);
-			if (!printed)
+			if (printed < 0)
 				return (-1);
 			count += printed;
 			continue;

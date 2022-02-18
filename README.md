@@ -8,7 +8,7 @@ printf in c 구현
 '-': O, '0': X, '.': X, '#': X, ' ': X, '+': X, width: O
 
 * string s   
-'-': O, '0': X, '.': X, '#': X, ' ': X, '+': X, width: O
+'-': O, '0': X, '.': O, '#': X, ' ': X, '+': X, width: O
 
 * address p   
 '-': O, '0': X, '.': X, '#': X, ' ': X, '+': X, width: O
