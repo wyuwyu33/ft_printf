@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 12:55:11 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/13 08:58:38 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/13 12:18:43 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	filter_info(t_info *info);
 int		print_address(t_info info, size_t address);
 int		print_char(t_info info, char ch);
 int		print_hex(t_info info, unsigned int hex_num);
-int		print_info(t_info info, va_list ap);
+int		print_info(t_info info, va_list *ap);
 int		print_int(t_info info, int i_num);
 int		print_notation(t_info info);
 int		print_precision(t_info *info);
@@ -59,10 +59,10 @@ int		print_zero(t_info *info);
 // set
 void	precision_redefine(t_info *info, int size);
 void	set_flag(char **format,t_info *info);
-t_info	set_info(char **format, va_list ap);
-void	set_precision(char **format,t_info *info, va_list ap);
+t_info	set_info(char **format, va_list *ap);
+void	set_precision(char **format,t_info *info, va_list *ap);
 void	set_specifier(char **format, t_info *info);
-void	set_width(char **format,t_info *info, va_list ap);
+void	set_width(char **format,t_info *info, va_list *ap);
 void	width_redefine(t_info *info, int size);
 
 // utill

@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:55:59 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/12 18:11:41 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/18 22:59:26 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 
 int main(void)
 {
-	printf("\n%d", printf("%c", 'c')); // to do width minus_flag set in print_char
+	printf("----printf--\n");
+	printf("\n%d\n", printf("%-50.20X", -42));
+	printf("----ft_printf--\n");
+	printf("\n%d", ft_printf("%-50.20X", -42));
 	return (0);
 }

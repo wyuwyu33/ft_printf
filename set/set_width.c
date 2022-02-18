@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:22:59 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/11 17:15:37 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/13 12:16:46 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	width_asterisk(t_info *info, int asterisk)
 	info->width = asterisk;
 }
 
-void	set_width(char **format,t_info *info, va_list ap)
+void	set_width(char **format,t_info *info, va_list *ap)
 {
 	int tmp;
 	
@@ -39,7 +39,7 @@ void	set_width(char **format,t_info *info, va_list ap)
 	}
 	else if (**format && **format == '*')
 	{
-		tmp = va_arg(ap, int);
+		tmp = va_arg(*ap, int);
 		width_asterisk(info, tmp);
 		(*format)++;
 	}
