@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:03:31 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/17 20:17:05 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:43:37 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	width_redefine(t_info *info, int size)
 {
-	int sign;
+	int	sign;
 
-	sign = info->plus == VALID || info->space == VALID;
+	sign = (info->plus == VALID || info->space == VALID);
 	if (sign)
 		info->width--;
 	if (info->width > info->precision + size)

@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:02:50 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/17 19:17:16 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:26:22 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	print_char(t_info info, char ch)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	precision_redefine(&info, 1);

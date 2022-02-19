@@ -6,13 +6,13 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:24:17 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/18 23:19:48 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:27:21 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-int		print_info(t_info info, va_list *ap)
+int	print_info(t_info info, va_list *ap)
 {
 	char	specifier;
 	int		count;
@@ -30,7 +30,7 @@ int		print_info(t_info info, va_list *ap)
 		count = print_int(info, va_arg(*ap, int));
 	else if (specifier == 'u')
 		count = print_unsigned(info, va_arg(*ap, unsigned int));
-	else if (specifier == 'p') // to do
+	else if (specifier == 'p')
 		count = print_address(info, va_arg(*ap, size_t));
 	else if (specifier == 'x' || specifier == 'X')
 		count = print_hex(info, va_arg(*ap, unsigned int));

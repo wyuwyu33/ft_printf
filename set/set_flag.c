@@ -6,13 +6,13 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 11:22:34 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/11 17:09:41 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:45:07 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	set_flag(char **format,t_info *info)
+void	set_flag(char **format, t_info *info)
 {
 	while (**format && ft_strchr(FLAGS, **format))
 	{

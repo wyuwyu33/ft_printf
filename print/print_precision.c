@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 16:22:57 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/11 16:28:54 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:39:23 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	print_precision(t_info *info)
 {
-	int count;
-	
+	int	count;
+
 	if (!ft_strchr("diuxX", info->specifier))
 		return (0);
 	count = info->precision;

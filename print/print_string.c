@@ -6,13 +6,13 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:03:28 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/19 02:07:09 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:40:18 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-int print_strlen(t_info info, char *str)
+int	print_strlen(t_info info, char *str)
 {
 	int	limit;
 	int	len;
@@ -31,7 +31,7 @@ int print_strlen(t_info info, char *str)
 		return (limit);
 }
 
-int print_putstr(char *str, int len)
+int	print_putstr(char *str, int len)
 {
 	if (!str)
 		return (write(1, "(null)", len));
@@ -40,8 +40,8 @@ int print_putstr(char *str, int len)
 
 int	print_string(t_info info, char *str)
 {
-	int count;
-	int len;
+	int	count;
+	int	len;
 
 	count = 0;
 	len = print_strlen(info, str);

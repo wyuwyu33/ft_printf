@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:03:56 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/18 22:56:55 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:27:01 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	print_uintlen(unsigned int unum)
 {
-	unsigned int base;
-	int count;
+	unsigned int	base;
+	int				count;
 
 	base = 10;
 	count = 1;
@@ -27,7 +27,7 @@ int	print_uintlen(unsigned int unum)
 	return (count);
 }
 
-int print_putunsinged(unsigned int unum)
+int	print_putunsinged(unsigned int unum)
 {
 	unsigned int	base;
 	unsigned int	idx;
@@ -44,8 +44,8 @@ int print_putunsinged(unsigned int unum)
 
 int	print_unsigned(t_info info, unsigned int u_num)
 {
-	int count;
-	int len;
+	int	count;
+	int	len;
 
 	count = 0;
 	len = print_uintlen(u_num);

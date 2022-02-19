@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 05:25:12 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/19 01:52:53 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:41:47 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_info	set_info(char **format, va_list *ap)
 {
-	t_info info;
+	t_info	info;
 
 	info = init_info();
 	set_flag(format, &info);

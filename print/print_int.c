@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:03:39 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/19 01:16:27 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:42:07 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ int	print_intlen(int num)
 
 int	print_putint_rec(int num)
 {
-	int base;
-	int count;
-	int idx;
-	
+	int	base;
+	int	count;
+	int	idx;
+
 	base = 10;
 	if (num < 0)
 	{
@@ -64,7 +64,7 @@ int	print_putint(int num)
 {
 	if (!num)
 		return (write(1, "0", 1));
-	return print_putint_rec(num);
+	return (print_putint_rec(num));
 }
 
 int	print_int(t_info info, int i_num)
@@ -72,7 +72,7 @@ int	print_int(t_info info, int i_num)
 	int		count;
 	int		len;
 	char	sign;
-		
+
 	count = 0;
 	sign = print_int_setinfo(&info, i_num);
 	len = print_intlen(i_num);

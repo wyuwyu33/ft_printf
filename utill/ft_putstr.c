@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 16:07:52 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/11 16:09:16 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:45:16 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_putstr(char *str)
 {
-	int len;
-	
+	int	len;
+
 	len = write(1, str, ft_strlen(str));
 	return (len);
 }

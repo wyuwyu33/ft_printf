@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 15:59:27 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/11 16:10:48 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:40:44 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	print_notation(t_info info)
 		return (0);
 	if (ft_strchr("xp", info.specifier))
 		return (ft_putstr("0x"));
-	else if (info.specifier ==  'X')
+	else if (info.specifier == 'X')
 		return (ft_putstr("0X"));
 	return (0);
 }

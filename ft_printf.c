@@ -6,13 +6,13 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/01 00:23:06 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/18 23:17:02 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:23:56 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int		parse_and_print(char *format, va_list ap)
+int	parse_and_print(char *format, va_list ap)
 {
 	int		count;
 	int		printed;
@@ -29,7 +29,7 @@ int		parse_and_print(char *format, va_list ap)
 			if (printed < 0)
 				return (-1);
 			count += printed;
-			continue;
+			continue ;
 		}
 		ft_putchar(*(format++));
 		count++;

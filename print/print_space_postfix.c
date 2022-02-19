@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 09:00:32 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/13 11:26:33 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:39:33 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	print_space_postfix(t_info *info)
 {
-	int count;
+	int	count;
 
 	if (info->dash != VALID)
 		return (0);

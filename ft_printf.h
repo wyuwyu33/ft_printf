@@ -6,12 +6,12 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 12:55:11 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/19 01:55:54 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:25:58 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINT_H
-# define FT_PRINT_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdio.h>
 
@@ -24,7 +24,7 @@
 # define VALID 1
 # define INVALID 0
 
-typedef struct	s_info
+typedef struct s_info
 {
 	int			dash;
 	int			zero;
@@ -59,11 +59,11 @@ int		print_zero(t_info *info);
 
 // set
 void	precision_redefine(t_info *info, int size);
-void	set_flag(char **format,t_info *info);
+void	set_flag(char **format, t_info *info);
 t_info	set_info(char **format, va_list *ap);
-void	set_precision(char **format,t_info *info, va_list *ap);
+void	set_precision(char **format, t_info *info, va_list *ap);
 void	set_specifier(char **format, t_info *info);
-void	set_width(char **format,t_info *info, va_list *ap);
+void	set_width(char **format, t_info *info, va_list *ap);
 void	width_redefine(t_info *info, int size);
 
 // utill

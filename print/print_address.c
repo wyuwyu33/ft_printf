@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:04:11 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/18 22:24:43 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 02:41:03 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	print_putaddress(size_t address)
 
 int	print_address(t_info info, size_t address)
 {
-	int count;
+	int	count;
 	int	len;
 
 	count = 0;
