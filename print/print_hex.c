@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:04:40 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/19 16:05:46 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/19 16:13:35 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int	print_hex(t_info info, unsigned int hex_num)
 	int	count;
 	int	len;
 	int	notation_len;
-	
+
 	count = 0;
 	len = print_hexlen(hex_num);
 	notation_len = print_hex_notationlen(info, hex_num);
