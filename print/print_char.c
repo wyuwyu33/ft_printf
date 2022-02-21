@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 14:02:50 by wyu               #+#    #+#             */
-/*   Updated: 2022/02/19 15:34:38 by wyu              ###   ########.fr       */
+/*   Updated: 2022/02/21 20:40:46 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	print_char(t_info info, char ch)
 {
 	int	count;
 
+	info.precision = 0;
 	count = 0;
 	precision_redefine(&info, 1);
 	width_redefine(&info, 1);
